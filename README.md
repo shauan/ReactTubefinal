@@ -32,10 +32,12 @@ Run `npm run dev` and visit localhost:8080 to make sure everything is working.
 
 
 
-## Wireframes and Trello:
+## Wireframes:
 
 
-![] ()
+![First screen] (https://github.com/2high/ReactTubefinal/blob/master/style/img/Screen%20Shot%202017-02-28%20at%209.05.38%20AM.png?raw=true)
+
+![Favorites screen] (https://github.com/2high/ReactTubefinal/blob/master/style/img/Screen%20Shot%202017-02-28%20at%209.05.54%20AM.png?raw=true)
 
 
 
