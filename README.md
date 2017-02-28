@@ -82,7 +82,7 @@ The structure of the web app:
 
 ## Deployment
 
-Deployed on [Heroku](https://markit-x.herokuapp.com/)
+Deployed on [Heroku](https://reactubez.herokuapp.com/)
 
 ## Author
 
