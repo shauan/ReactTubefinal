@@ -21,6 +21,7 @@ class App extends Component {
 
     this.videoSearch('Best beaches');
     this.favoritesList = this.favoritesList.bind(this);
+    this.deleteFavorite = this.deleteFavorite.bind(this);
   }
 
   videoSearch(term) {
@@ -46,19 +47,39 @@ class App extends Component {
     });
   }
 
+  deleteFavorite(url) {
+    // var urlID = "";
+    // axios.get('https://hm-msg-forum-f02c3.firebaseio.com/messages/.json')
+    // .then((res) => {
+    //   Object.values(res).map((elm,idx) => {
+    //     // if (Object.values(elm)[idx] !== undefined && Object.values(elm)[idx].favorites === url) {
+    //     //   urlID = Object.keys(elm)[idx];
+    //     //   console.log(urlID);
+    //     // }
+    //     // console.log(Object.values(elm)[0]);
+    //     keys = Object.keys(elm));
+    //     values = Object.values(elm));
+    //   })
+    //   // console.log(urlID);
+    //   console.log(keys);
+    //   console.log(values);
+    // })
+  }
+
   favoritesList() {
     return (
         this.state.favoritesList.reverse().map(el =>
             <div className="infoz">
               <div className="titz">{el.title}</div>
               <a href={el.favorites}  target="_blank">{el.favorites}</a>
+              {/* <button onClick={() => this.deleteFavorite(el.favorites)}>Delete</button> */}
             </div>
         )
     )
   }
 
   render() {
-    const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 100);
+    const videoSearch = _.debounce((term) => {this.videoSearch(term)}, );
 
     return (
       <div className="container">
